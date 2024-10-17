@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Unique Design Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #764ba2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #764ba2;
+        }
+        .project-info {
+            padding: 15px;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Unique Design Portfolio</h1>
+    <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio">
+            <div class="project">
+                <img src="https://via.placeholder.com/300/667eea/fff?text=Project+1" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of Project 1, highlighting the skills used and the outcome.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300/764ba2/fff?text=Project+2" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of Project 2, emphasizing creativity and design process.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300/ffc107/fff?text=Project+3" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of Project 3, focusing on the impact and client feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Aditi, a passionate designer with a love for creating beautiful and functional designs. My journey in design began with a simple sketch, and it has evolved into a career that allows me to bring ideas to life. I believe in the power of good design to solve problems and create lasting impressions.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Interested in collaborating? Reach out via email: <a href="mailto:aditi.email@example.com">aditi.email@example.com</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Unique Design Portfolio</p>
+</footer>
+
+</body>
+</html>
